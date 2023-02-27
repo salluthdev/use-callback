@@ -1,15 +1,15 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import List from "./List";
 
 export default function Home() {
   const [number, setNumber] = useState(1);
   const [darkTheme, setDarkTheme] = useState(false);
 
-  const getItems = useCallback(() => {
+  const getItems = () => {
     return [number, number + 1, number + 2];
-  }, [number]);
+  };
 
   return (
     <>
