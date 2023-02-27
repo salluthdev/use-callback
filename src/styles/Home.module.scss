@@ -1,0 +1,23 @@
+.main {
+  padding: 16px;
+  &.dark {
+    color: #fff;
+    background: black;
+  }
+  .input_wrapper {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    input {
+      width: 240px;
+      height: 40px;
+      font-size: 16px;
+      padding: 8px;
+    }
+    button {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 8px;
+    }
+  }
+}
